@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/ro/releases/2023-08-18/core.owl" uri="file:/D:/Sonstiges/Helmholtz_Lenovo/AutoPeroSol/Ontologien/Relation%20Ontology/ro_core.owl"/>
+    <uri id="Imports Wizard Entry" name="http://www.ifomis.org/bfo/1.1" uri="file:/D:/Sonstiges/Helmholtz_Lenovo/AutoPeroSol/Ontologien/BFO-master/bfo.owl"/>
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1704186667138" name="http://www.semanticweb.org/sirdingeldongel/ontologies/2023/11/untitled-ontology-99" uri="CE_Nome_v0.1.owl"/>
+    </group>
+</catalog>

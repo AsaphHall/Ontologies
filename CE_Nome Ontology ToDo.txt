@@ -1,0 +1,8 @@
+Roadmap
+	-Klassen aus Nomad sammeln
+
+Anmerkungen
+	-
+To-do
+	-Unit Labels
+	-Steps/Step size (z.B. für Potential)
