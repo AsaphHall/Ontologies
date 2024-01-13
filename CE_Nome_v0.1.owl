@@ -12,8 +12,8 @@
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://www.semanticweb.org/sirdingeldongel/ontologies/2023/11/untitled-ontology-99">
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ro/releases/2023-08-18/core.owl"/>
-        <owl:imports rdf:resource="http://www.ifomis.org/bfo/1.1"/>
     </owl:Ontology>
     
 
@@ -84,36 +84,32 @@
     
 
 
-    <!-- http://www.ifomis.org/bfo/1.1/snap#Continuant -->
-
-    <rdf:Description rdf:about="http://www.ifomis.org/bfo/1.1/snap#Continuant">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sirdingeldongel/ontologies/2023/11/untitled-ontology-99#solvent"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </rdf:Description>
-    
-
-
     <!-- http://www.ifomis.org/bfo/1.1/snap#FiatObjectPart -->
 
-    <rdf:Description rdf:about="http://www.ifomis.org/bfo/1.1/snap#FiatObjectPart">
+    <owl:Class rdf:about="http://www.ifomis.org/bfo/1.1/snap#FiatObjectPart">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sirdingeldongel/ontologies/2023/11/untitled-ontology-99#pump_rate"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-    </rdf:Description>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ifomis.org/bfo/1.1/snap#Object -->
+
+    <owl:Class rdf:about="http://www.ifomis.org/bfo/1.1/snap#Object">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+    </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/sirdingeldongel/ontologies/2023/11/untitled-ontology-99#area -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/sirdingeldongel/ontologies/2023/11/untitled-ontology-99#area">
-        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Quality"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
     </owl:Class>
     
 
@@ -306,7 +302,7 @@
     <!-- http://www.semanticweb.org/sirdingeldongel/ontologies/2023/11/untitled-ontology-99#current_density -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/sirdingeldongel/ontologies/2023/11/untitled-ontology-99#current_density">
-        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Quality"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
     </owl:Class>
     
 
@@ -322,7 +318,7 @@
     <!-- http://www.semanticweb.org/sirdingeldongel/ontologies/2023/11/untitled-ontology-99#data_analysis -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/sirdingeldongel/ontologies/2023/11/untitled-ontology-99#data_analysis">
-        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/span#Process"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
     </owl:Class>
     
 
@@ -338,7 +334,7 @@
     <!-- http://www.semanticweb.org/sirdingeldongel/ontologies/2023/11/untitled-ontology-99#datetime -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/sirdingeldongel/ontologies/2023/11/untitled-ontology-99#datetime">
-        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Quality"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
@@ -452,7 +448,7 @@
     <!-- http://www.semanticweb.org/sirdingeldongel/ontologies/2023/11/untitled-ontology-99#humidity -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/sirdingeldongel/ontologies/2023/11/untitled-ontology-99#humidity">
-        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Quality"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
     </owl:Class>
     
 
@@ -460,7 +456,7 @@
     <!-- http://www.semanticweb.org/sirdingeldongel/ontologies/2023/11/untitled-ontology-99#identifier -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/sirdingeldongel/ontologies/2023/11/untitled-ontology-99#identifier">
-        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#SpecificallyDependentContinuant"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
@@ -486,7 +482,7 @@
     <!-- http://www.semanticweb.org/sirdingeldongel/ontologies/2023/11/untitled-ontology-99#information_content_entity -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/sirdingeldongel/ontologies/2023/11/untitled-ontology-99#information_content_entity">
-        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#GenericallyDependentContinuant"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
     </owl:Class>
     
 
@@ -536,7 +532,7 @@
     <!-- http://www.semanticweb.org/sirdingeldongel/ontologies/2023/11/untitled-ontology-99#measurement_datum -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/sirdingeldongel/ontologies/2023/11/untitled-ontology-99#measurement_datum">
-        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Quality"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
     </owl:Class>
     
 
@@ -544,7 +540,7 @@
     <!-- http://www.semanticweb.org/sirdingeldongel/ontologies/2023/11/untitled-ontology-99#pH -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/sirdingeldongel/ontologies/2023/11/untitled-ontology-99#pH">
-        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Quality"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
@@ -566,7 +562,7 @@
     <!-- http://www.semanticweb.org/sirdingeldongel/ontologies/2023/11/untitled-ontology-99#planned_process -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/sirdingeldongel/ontologies/2023/11/untitled-ontology-99#planned_process">
-        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/span#Process"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
     </owl:Class>
     
 
@@ -574,7 +570,7 @@
     <!-- http://www.semanticweb.org/sirdingeldongel/ontologies/2023/11/untitled-ontology-99#potential -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/sirdingeldongel/ontologies/2023/11/untitled-ontology-99#potential">
-        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Quality"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/sirdingeldongel/ontologies/2023/11/untitled-ontology-99#is_quality_speciefied_as"/>
@@ -642,7 +638,7 @@
     <!-- http://www.semanticweb.org/sirdingeldongel/ontologies/2023/11/untitled-ontology-99#pressure -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/sirdingeldongel/ontologies/2023/11/untitled-ontology-99#pressure">
-        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Quality"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/sirdingeldongel/ontologies/2023/11/untitled-ontology-99#is_quality_speciefied_as"/>
@@ -670,7 +666,7 @@
     <!-- http://www.semanticweb.org/sirdingeldongel/ontologies/2023/11/untitled-ontology-99#process_quality -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/sirdingeldongel/ontologies/2023/11/untitled-ontology-99#process_quality">
-        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Quality"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
     </owl:Class>
     
 
@@ -712,7 +708,7 @@
     <!-- http://www.semanticweb.org/sirdingeldongel/ontologies/2023/11/untitled-ontology-99#purging -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/sirdingeldongel/ontologies/2023/11/untitled-ontology-99#purging">
-        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/span#Process"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
     </owl:Class>
     
 
@@ -784,7 +780,7 @@
     <!-- http://www.semanticweb.org/sirdingeldongel/ontologies/2023/11/untitled-ontology-99#resistance -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/sirdingeldongel/ontologies/2023/11/untitled-ontology-99#resistance">
-        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Quality"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
@@ -818,7 +814,7 @@
     <!-- http://www.semanticweb.org/sirdingeldongel/ontologies/2023/11/untitled-ontology-99#sample_period -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/sirdingeldongel/ontologies/2023/11/untitled-ontology-99#sample_period">
-        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Quality"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
     </owl:Class>
     
 
@@ -934,7 +930,7 @@
     <!-- http://www.semanticweb.org/sirdingeldongel/ontologies/2023/11/untitled-ontology-99#step_size -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/sirdingeldongel/ontologies/2023/11/untitled-ontology-99#step_size">
-        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Quality"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
     </owl:Class>
     
 
@@ -984,7 +980,7 @@
     <!-- http://www.semanticweb.org/sirdingeldongel/ontologies/2023/11/untitled-ontology-99#time -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/sirdingeldongel/ontologies/2023/11/untitled-ontology-99#time">
-        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Quality"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
     </owl:Class>
     
 
@@ -1014,7 +1010,7 @@
     <!-- http://www.semanticweb.org/sirdingeldongel/ontologies/2023/11/untitled-ontology-99#voltage -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/sirdingeldongel/ontologies/2023/11/untitled-ontology-99#voltage">
-        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Quality"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
     </owl:Class>
     
 
