@@ -161,6 +161,12 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sirdingeldongel/ontologies/2023/11/untitled-ontology-99#working_electrode"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sirdingeldongel/ontologies/2023/11/untitled-ontology-99#current_density"/>
             </owl:Restriction>
@@ -192,19 +198,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sirdingeldongel/ontologies/2023/11/untitled-ontology-99#scan_rate"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sirdingeldongel/ontologies/2023/11/untitled-ontology-99#switching_potential"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sirdingeldongel/ontologies/2023/11/untitled-ontology-99#time_since_polarisation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sirdingeldongel/ontologies/2023/11/untitled-ontology-99#voltage"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -234,25 +234,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/sirdingeldongel/ontologies/2023/11/untitled-ontology-99#has_input"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sirdingeldongel/ontologies/2023/11/untitled-ontology-99#quiet_time_setting_datum"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/sirdingeldongel/ontologies/2023/11/untitled-ontology-99#has_input"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sirdingeldongel/ontologies/2023/11/untitled-ontology-99#scan_rate_setting_datum"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/sirdingeldongel/ontologies/2023/11/untitled-ontology-99#has_input"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sirdingeldongel/ontologies/2023/11/untitled-ontology-99#switching_potential_setting_datum"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/sirdingeldongel/ontologies/2023/11/untitled-ontology-99#has_input"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sirdingeldongel/ontologies/2023/11/untitled-ontology-99#working_electrode"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sirdingeldongel/ontologies/2023/11/untitled-ontology-99#voltage_setting_datum"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1018,6 +1000,26 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/sirdingeldongel/ontologies/2023/11/untitled-ontology-99#voltage">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sirdingeldongel/ontologies/2023/11/untitled-ontology-99#is_quality_speciefied_as"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sirdingeldongel/ontologies/2023/11/untitled-ontology-99#voltage_setting_datum"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sirdingeldongel/ontologies/2023/11/untitled-ontology-99#voltage_setting_datum -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sirdingeldongel/ontologies/2023/11/untitled-ontology-99#voltage_setting_datum">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sirdingeldongel/ontologies/2023/11/untitled-ontology-99#setting_datum"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sirdingeldongel/ontologies/2023/11/untitled-ontology-99#is_quality_specification_of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sirdingeldongel/ontologies/2023/11/untitled-ontology-99#voltage"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -1042,7 +1044,7 @@
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sirdingeldongel/ontologies/2023/11/untitled-ontology-99#electrode"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/sirdingeldongel/ontologies/2023/11/untitled-ontology-99#input_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sirdingeldongel/ontologies/2023/11/untitled-ontology-99#chronoamperometry"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1075,5 +1077,5 @@
 
 
 
-<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
 
